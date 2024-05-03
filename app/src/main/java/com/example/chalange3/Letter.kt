@@ -3,16 +3,10 @@ package com.example.chalange3
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
-@Parcelize
-data class Words(
-    val name: String,
-    val phoneNumber: Int
-) : Parcelable
-
 
 val alphabets = ('A'..'Z').map { it.toString() }.toMutableList()
 
-enum class Word(val char: String, val words: ArrayList<String>){
+enum class Words(val char: String, val words: ArrayList<String>){
     A("A", arrayListOf("Australia")),
     B("B", arrayListOf("Bugis")),
     C("C", arrayListOf("Caramel")),
