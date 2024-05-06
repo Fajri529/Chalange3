@@ -32,14 +32,6 @@ class ListFragment : Fragment() {
 
     fun setupToolbar() {
         binding.toolbar.topAppBar.setNavigationIcon(null)
-        binding.toolbar.topAppBar.setOnMenuItemClickListener {
-            when (it.itemId) {
-                R.id.changeLayout -> {
-                    binding.rvList.layoutManager = GridLayoutManager(activity, 3)
-                }
-            }
-            false
-        }
     }
 
         fun setupRecyclerView(){
